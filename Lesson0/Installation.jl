@@ -31,7 +31,7 @@ Julia REPL is way more reach respect to Python REPL, in particular some of the k
 md"""
 ### Shell mode
 Let's start Julia by typing `julia` from our command shell, we will then have the following screen:
-```julia
+```julia-repl
                _
    _       _ _(_)_     |  Documentation: https://docs.julialang.org
   (_)     | (_) (_)    |
@@ -44,11 +44,11 @@ Let's start Julia by typing `julia` from our command shell, we will then have th
 julia>
 ```
 In order to access the shell we will have to type `;`, the active line will transform to:
-```julia
+```julia-repl
 shell>
 ```
 we can now try to use some basics commands like `whoami` which prints the name of the current logged in user:
-``` julia
+```julia-repl
 shell> whoami
 vince
 ```
@@ -59,11 +59,11 @@ To exit the shell mode (and all other modes) we just have to press the `delete` 
 md"""
 ### Documentation
 If in `Julia REPL` we type `?`, we will enter the help mode:
-```julia
+```julia-repl
 help?>
 ```
 Here we can insert symbols (keywords, names of functions and variables, types etc.) and, if they have a documentation linked to them, it will be shown to us.  For example:
-```julia
+```julia-repl
 help?> if
 search: if diff in im
 
@@ -85,8 +85,8 @@ search: if diff in im
 
   In contrast to some other languages conditions must be of type Bool. It does not suffice for conditions to be convertible to Bool.
 
-  julia> if 1 end
-  ERROR: TypeError: non-boolean (Int64) used in boolean context
+julia> if 1 end
+ERROR: TypeError: non-boolean (Int64) used in boolean context
 ```
 """
 
@@ -110,16 +110,16 @@ In julia, enviroments are characterized by 2 files:
 md"""
 ### Our first environment
 Let's start by creating our first enviroment, it is pretty easy, just start Julia REPL and type `]` to enter `pkg` mode. From there execute the following command:
-```julia
+```julia-repl
 	pkg> activate .
 ```
 this will activate the project in the folder "." (current folder) if it exists, otherwise a new one will be created. You can check the full documentation of the `activate` command by executing
-```julia
+```julia-repl
 	pkg> ?activate
 ```
 
 We can now install our first package, it will be `Pluto` (full documentation [here](https://plutojl.org/)), it allows the creation of notebooks like the one you are currenty reading. To install it we will have to simply execute the command
-```julia
+```julia-repl
 	pkg> add Pluto
 ```
 we can now see a `Project.toml` and a `Manifest.toml` being created in the current folder

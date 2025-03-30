@@ -55,14 +55,14 @@ There are many other built-in types, for now let's focus on the most basic ones.
 * `Bool`: an element of type `Bool` can be in one of 2 states, which are `true` and `false`, this type is used to determine if a predicate is `true` or `false`
 * `Nothing`: an element of type `Nothing` has the value `nothing`, it is just used to indicate that the variable doesn't refer to any location in memory. There other types that hold a similar meaning (`UndefInitializer` and `Missing`), but we will talk about them later in `Arrays` section.
 * `String`: a string a collection of characters, the most basic example is the following:
-```julia
+```julia-repl
 julia> 🔤 = "Hello world";
 
 julia> typeof(🔤)
 String
 ```
 * `Type`: all types are instances of `Type`, i.e.
-```julia
+```julia-repl
 julia> Int isa Type
 true
 ```
@@ -145,7 +145,7 @@ y(point)
 # ╔═╡ 4330de84-b973-4a59-bd3d-2fd173cb51e1
 md"""
 we can check that by trying to modify the value of a field, we would get an error:
-```julia
+```julia-repl
 julia> point.x = -1.0
 ERROR: setfield!: immutable struct of type Point2D cannot be changed
 Stacktrace:
@@ -184,7 +184,7 @@ md"""
 Subtyping is one of the most important features of julia. Before defining what it is, we have to specify that in julia there are 2 possible kinds of types which are `abstract` and `concrete`, the difference is that abstract types cannot be instantiated, they are only nodes in a type hierarchy.
 
 A type (either concrete or abstract) `T₁` is a subtype of an abstract type `T₂` if all instances of `T₁` are also of type `T₂`. But let's try to be clearer with an example. We said that int and floats are both numerical types, but while the meaning of this affirmation is intuitive, it is translated in the fact that `Int#` and `Float#` are both subtypes of the abstract type `Number`
-```julia
+```julia-repl
 julia> 3.0 isa Number
 true
 
