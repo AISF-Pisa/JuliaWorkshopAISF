@@ -1,7 +1,7 @@
 <figure style="text-align: center;">
     <img src="https://raw.githubusercontent.com/ai-sf/ai-sf.github.io/master/img/loghi_LC/pisa.png"
          alt="Logo"
-         height="200">
+         height="350">
 </figure>
 
 Julia is a relatively new programming language designed for scientific computation. It offers an interface as easy to use as Python's but with performance comparable to static programming languages like C and Fortran.
