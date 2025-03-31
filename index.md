@@ -1,3 +1,5 @@
+![](https://github.com/ai-sf/ai-sf.github.io/blob/master/img/loghi_LC/pisa.png "logo")
+
 ## Lesson 0
 1. A small [Introduction](Lesson0/Introduction.pdf) about Julia, what it is and why you should learn it. 
 2. A guide to the [Installation and Package Manager](Lesson0/Installation.html)
