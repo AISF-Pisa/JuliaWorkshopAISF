@@ -17,9 +17,9 @@ The workshop consists of 4 lessons, each lasting 2 hours. The first two lessons 
 
 ## Lesson 1: Estimated Date 15/Apr/2025
 1. Learn about the different [Scopes](Lesson1/Scopes.html) in Julia.
-2. Understand how to [Control the Flow](Lesson1/Control_Flow.jl) of execution.
-3. Explore Julia's [Macros](Lesson1/macros.jl) and advanced usage of [Functions](Lesson1/more_functions.jl).
-4. Learn about Julia's Garbage Collector.
+2. Understand how to [Control the Flow](Lesson1/Control_Flow.html) of execution.
+3. Explore Julia's [Macros](Lesson1/macros.html) and advanced usage of [Functions](Lesson1/more_functions.html).
+4. Learn about Julia's [Garbage Collector](Lesson1/garbage_collector.html).
 
 ## Lesson 2: Estimated Date 29/Apr/2025
 This lesson focuses on utility packages, including:
