@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.4
+# v0.20.5
 
 using Markdown
 using InteractiveUtils
@@ -61,6 +61,31 @@ let
 	A = [1, 2, 3]
 	@info "This is an info message" A
 	@info "you can also use keyword" var=A
+end
+
+# ╔═╡ 4e0636a1-ac8f-4394-8afe-ecf00a2835da
+md"""
+We can also add an exception and a backtrace to the `@error` macro, it is important to know that the exception would not be thrown automatically. This allows to know if an error occurred by reading the log even if the error was catched.
+"""
+
+# ╔═╡ d80331e9-f2c9-4689-9c87-125d7082e7a9
+let
+	function foo1()
+		@error "This is an error with an exception and a backtrace" exception=(ArgumentError("something"), backtrace())
+		@info "This will be shown since we haven't trhown the error"
+	end
+	foo1()
+end
+
+# ╔═╡ 9d3649bc-7a6f-4106-94ff-b10fe0f6ecd7
+let
+	function foo2()
+		ex = ArgumentError("something")
+		@error "This is an error with an exception and a backtrace" exception=(ex, backtrace())
+		throw(ex)
+		@info "This will not be shown"
+	end
+	foo2()
 end
 
 # ╔═╡ 57e26ae6-3972-4d86-8f66-0932192139fc
@@ -234,6 +259,9 @@ version = "1.11.0"
 # ╠═e1be3bfb-0764-435d-872f-e073ca3c3ee8
 # ╟─950186f6-1cb1-480d-9898-1033a7fa86d2
 # ╠═ca6dd602-d5d6-496d-9711-783925d39764
+# ╟─4e0636a1-ac8f-4394-8afe-ecf00a2835da
+# ╠═d80331e9-f2c9-4689-9c87-125d7082e7a9
+# ╠═9d3649bc-7a6f-4106-94ff-b10fe0f6ecd7
 # ╠═cd7d1a77-533c-4898-863b-6f4030666886
 # ╟─57e26ae6-3972-4d86-8f66-0932192139fc
 # ╟─4b3aa5b4-0b71-46b4-aaa4-c038e7abb998
