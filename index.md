@@ -23,10 +23,10 @@ The workshop consists of 4 lessons, each lasting 2 hours. The first two lessons 
 
 ## Lesson 2: Estimated Date 29/Apr/2025
 This lesson focuses on utility packages, including:
-1. **BenchmarkTools**: A library with utility macros for benchmarking operations and functions.
-2. **LoggingExtras**: A library for more fine-grained control over logging output.
-3. **Plots**: A library for creating visualizations.
-4. **HDF5**: A library for interfacing with HDF5 files, commonly used to store large datasets.
+1. [BenchmarkTools](Lesson2/benchmark_tools.html): A library with utility macros for benchmarking operations and functions.
+2. [LoggingExtras](Lesson2/logging.html): A library for more fine-grained control over logging output.
+3. [Plots](Lesson2/plots.html): A library for creating visualizations.
+4. [hdf5](Lesson2/hdf5.html): A library for interfacing with HDF5 files, commonly used to store large datasets.
 
 ## Lesson 3: Estimated Date 6/May/2025
-Develop your own module to perform a Monte Carlo simulation.
+Develop your own module to perform a **Monte Carlo simulation**.
