@@ -29,3 +29,5 @@ Project.toml
 tmp*.jl
 *.out
 *.h5
+*.csv
+*.log
