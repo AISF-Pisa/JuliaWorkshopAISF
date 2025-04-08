@@ -10,23 +10,23 @@ Below is the scheduled program for the workshop conducted during the academic ye
 
 The workshop consists of 4 lessons, each lasting 2 hours. The first two lessons will provide an introduction to Julia and its syntax. The third lesson will cover some utility packages in Julia. The final lesson will involve a more advanced application of the concepts learned in the previous lessons, specifically building a module to perform Monte Carlo simulations.
 
-## Lesson 0: Estimated Date 8/Apr/2025
+## Lesson 0: Estimated Date 15/Apr/2025
 1. A brief [Introduction](Lesson0/Introduction.pdf) to Julia, explaining what it is and why you should learn it.
 2. A guide to the [Installation and Package Manager](Lesson0/Installation.html).
 3. An explanation of [Types and Multiple Dispatch](Lesson0/Types_and_MultipleDispatch.html) in Julia.
 
-## Lesson 1: Estimated Date 15/Apr/2025
+## Lesson 1: Estimated Date 29/Apr/2025
 1. Learn about the different [Scopes](Lesson1/Scopes.html) in Julia.
 2. Understand how to [Control the Flow](Lesson1/Control_Flow.html) of execution.
 3. Explore Julia's [Macros](Lesson1/macros.html) and advanced usage of [Functions](Lesson1/more_functions.html).
 4. Learn about Julia's [Garbage Collector](Lesson1/garbage_collector.html).
 
-## Lesson 2: Estimated Date 29/Apr/2025
+## Lesson 2: Estimated Date 6/May/2025
 This lesson focuses on utility packages, including:
 1. [BenchmarkTools](Lesson2/benchmark_tools.html): A library with utility macros for benchmarking operations and functions.
 2. [LoggingExtras](Lesson2/logging.html): A library for more fine-grained control over logging output.
 3. [Plots](Lesson2/plots.html): A library for creating visualizations.
 4. [hdf5](Lesson2/hdf5.html): A library for interfacing with HDF5 files, commonly used to store large datasets.
 
-## Lesson 3: Estimated Date 6/May/2025
+## Lesson 3: Estimated Date 13/May/2025
 Develop your own module to perform a **Monte Carlo simulation**.
