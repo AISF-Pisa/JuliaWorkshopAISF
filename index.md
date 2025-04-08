@@ -29,4 +29,4 @@ This lesson focuses on utility packages, including:
 4. [hdf5](Lesson2/hdf5.html): A library for interfacing with HDF5 files, commonly used to store large datasets.
 
 ## Lesson 3: Estimated Date 13/May/2025
-Develop your own module to perform a **Monte Carlo simulation**.
+Develop your own module to perform a **Monte Carlo simulation**. The module is being developed in a seperate repo [MCMC.jl](https://github.com/VinceNeede/MCMC.jl)
