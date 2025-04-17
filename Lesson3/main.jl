@@ -10,12 +10,14 @@ function main(file::HDF5.File)
 
     acquire(semaphore)
 
-    pi_mcmc = PiMCMC(state=[0.0, 0.0], checkpoint_file=file)
-
+    pi_mcmc = PiMCMC([0.0, 0.0], checkpoint_file=file)
     Base.with_logger(mcmc_logger(id(pi_mcmc), 1_000)) do
-        run!(pi_mcmc, 1_000_000)
+        try
+            run!(pi_mcmc, 1_000_000)
+        finally
+            close(save_file(pi_mcmc))
+        end
     end
-
     release(semaphore)
 end
 
