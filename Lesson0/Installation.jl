@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.5
+# v0.20.6
 
 using Markdown
 using InteractiveUtils
@@ -7,7 +7,15 @@ using InteractiveUtils
 # ╔═╡ e97182aa-00ee-11f0-23f8-15d4527ad4d6
 md"""
 # Install Julia
-Julia has its own installer called `juliaup`, all you have to do is follow the instructions [here](https://julialang.org/downloads/).
+Julia has its own installer called `juliaup`.
+
+For Unix systems (MacOs and Linux) you can install it running the following command:
+```bash
+curl -fsSL https://install.julialang.org | sh
+```
+For Windows systems it can be installed from the Microsoft Store [here](https://www.microsoft.com/store/apps/9NJNWW8PVKMN).
+
+juliaup will automatically install the latest stable julia version.
 """
 
 # ╔═╡ f4e57cc3-29ca-466d-90d0-2fc45784a30d
