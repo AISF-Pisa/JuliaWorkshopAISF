@@ -50,7 +50,7 @@ y(p::AbstractPoint2D) = r(p) * sin(θ(p))
 # ╔═╡ e77976ba-4ede-4e3a-880c-e12b95b9b14a
 x(p::AbstractPoint2D) = r(p) * cos(θ(p))
 
-# ╔═╡ 51c65c1a-58c0-4023-a39b-8ad9559935f0n
+# ╔═╡ 51c65c1a-58c0-4023-a39b-8ad9559935f0
 r(p::AbstractPoint2D) = sqrt(x(p)^2 + y(p)^2)
 
 # ╔═╡ 13a79f63-fbe9-4183-ad93-c45dffea6ad6
